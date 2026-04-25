@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>MVC App on VM</title></head>
+<body>
+  <h1>Student List — Running inside VirtualBox VM</h1>
+  <table border="1">
+    <tr><th>ID</th><th>Name</th><th>Grade</th></tr>
+    {% for s in students %}
+    <tr><td>{{ s["id"] }}</td><td>{{ s["name"] }}</td><td>{{ s["grade"] }}</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
